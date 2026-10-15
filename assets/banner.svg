@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#060911"/>
+    </linearGradient>
+
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="50%" stop-color="#7000FF"/>
+      <stop offset="100%" stop-color="#FF007A"/>
+    </linearGradient>
+
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FF007A" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <radialGradient id="cyan-ambient" cx="20%" cy="25%" r="55%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="pink-ambient" cx="80%" cy="75%" r="55%">
+      <stop offset="0%" stop-color="#FF007A" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FF007A" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" rx="20" fill="url(#bg-grad)"/>
+
+  <circle cx="220" cy="90" r="260" fill="url(#cyan-ambient)"/>
+  <circle cx="980" cy="270" r="260" fill="url(#pink-ambient)"/>
+
+  <!-- Network Mesh Lines -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1.2">
+    <line x1="120" y1="40" x2="300" y2="160"/>
+    <line x1="300" y1="160" x2="220" y2="300"/>
+    <line x1="300" y1="160" x2="480" y2="80"/>
+    <line x1="480" y1="80" x2="600" y2="180"/>
+    <line x1="600" y1="180" x2="750" y2="90"/>
+    <line x1="750" y1="90" x2="920" y2="180"/>
+    <line x1="920" y1="180" x2="1080" y2="80"/>
+    <line x1="920" y1="180" x2="1020" y2="310"/>
+    <line x1="600" y1="180" x2="680" y2="320"/>
+    <line x1="480" y1="80" x2="750" y2="90"/>
+  </g>
+
+  <rect x="1.5" y="1.5" width="1197" height="357" rx="18.5" fill="none" stroke="url(#border-grad)" stroke-width="2"/>
+
+  <g text-anchor="middle">
+    <g transform="translate(600, 50)">
+      <rect x="-165" y="-16" width="330" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.2"/>
+      <circle cx="-138" cy="0" r="4.5" fill="#10B981"/>
+      <text x="12" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="1.5">DECENTRALIZED P2P MESH CHAT</text>
+    </g>
+
+    <text x="600" y="160" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif" font-size="76" font-weight="900" fill="url(#glow-grad)" letter-spacing="-1.5" filter="url(#shadow)">
+      BitZheeChat
+    </text>
+
+    <text x="600" y="210" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="500" fill="#F1F5F9" letter-spacing="0.2">
+      Offline Bluetooth Mesh &amp; Global Nostr Relay Messaging
+    </text>
+
+    <text x="600" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="400" fill="#94A3B8">
+      Không máy chủ trung tâm • Không số điện thoại • Mã hóa đầu cuối Noise Protocol
+    </text>
+
+    <g transform="translate(600, 296)">
+      <g transform="translate(-255, 0)">
+        <rect x="-60" y="-14" width="120" height="28" rx="14" fill="#1e293b" stroke="#00F0FF" stroke-width="1"/>
+        <text x="0" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#38BDF8">📶 BLE Mesh</text>
+      </g>
+      <g transform="translate(-90, 0)">
+        <rect x="-70" y="-14" width="140" height="28" rx="14" fill="#1e293b" stroke="#A855F7" stroke-width="1"/>
+        <text x="0" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#C084FC">🟣 Nostr Protocol</text>
+      </g>
+      <g transform="translate(85, 0)">
+        <rect x="-70" y="-14" width="140" height="28" rx="14" fill="#1e293b" stroke="#10B981" stroke-width="1"/>
+        <text x="0" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#34D399">🔐 Noise Protocol</text>
+      </g>
+      <g transform="translate(250, 0)">
+        <rect x="-60" y="-14" width="120" height="28" rx="14" fill="#1e293b" stroke="#F43F5E" stroke-width="1"/>
+        <text x="0" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="600" fill="#FB7185">📱 iOS &amp; macOS</text>
+      </g>
+    </g>
+  </g>
+</svg>
